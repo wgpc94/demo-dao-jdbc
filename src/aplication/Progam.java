@@ -10,6 +10,8 @@ public class Progam {
 		
 		SellerDao sellerDao = DaoFactory.CreateSellerDao();
 		
+		System.out.println("---- Test 1: seller findById ------");
+		
 		Seller seller = sellerDao.FindById(3);
 		
 		System.out.println(seller);
