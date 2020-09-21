@@ -48,7 +48,13 @@ public class Progam {
 		
 		System.out.println("new Id: "+sellerInsert.getId());
 		
+		System.out.println("\n---- Test 5: seller update ------");
 		
+		Seller sellerUpdate = sellerDao.FindById(1);
+		sellerUpdate.setName("Bruce wayne");
+		
+		sellerDao.Update(sellerUpdate);
+		System.out.println("Update completed!");
 	}
 
 }
