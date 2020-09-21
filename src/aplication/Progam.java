@@ -1,6 +1,5 @@
 package aplication;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -27,6 +26,16 @@ public class Progam {
 		List<Seller> listaDepId = sellerDao.FindByDepartment(dep);
 		
 		for (Seller x: listaDepId) {
+			System.out.println(x);
+			
+		}
+		
+
+		System.out.println("\n---- Test 3: seller findAll ------");
+		
+		List<Seller> lista = sellerDao.FindAll();
+		
+		for (Seller x: lista) {
 			System.out.println(x);
 			
 		}
